@@ -14,7 +14,8 @@ class BudgetApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _router = AppRouter().router;
+    // final _router = AppRouter().router;
+    final _router = getIt<AppRouter>().router;
 
     return MaterialApp.router(
       routerConfig: _router,
